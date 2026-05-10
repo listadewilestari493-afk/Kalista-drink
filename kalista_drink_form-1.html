@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pemesanan Kalista Drink</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:linear-gradient(to right,#ffb347,#ffcc33);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .container{
+      background:white;
+      width:100%;
+      max-width:500px;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      text-align:center;
+      color:#ff7b00;
+      margin-bottom:10px;
+    }
+
+    p{
+      text-align:center;
+      color:#666;
+      margin-bottom:25px;
+    }
+
+    .input-box{
+      margin-bottom:20px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:8px;
+      font-weight:bold;
+      color:#444;
+    }
+
+    input,
+    select,
+    textarea{
+      width:100%;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:10px;
+      font-size:16px;
+    }
+
+    textarea{
+      resize:none;
+      height:100px;
+    }
+
+    .btn{
+      width:100%;
+      padding:14px;
+      border:none;
+      background:#ff7b00;
+      color:white;
+      font-size:18px;
+      border-radius:12px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#e66d00;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Kalista Drink</h1>
+    <p>Form Pemesanan Minuman Segar</p>
+
+    <form>
+
+      <div class="input-box">
+        <label>Nama Pelanggan</label>
+        <input type="text" placeholder="Masukkan nama">
+      </div>
+
+      <div class="input-box">
+        <label>Nomor HP</label>
+        <input type="tel" placeholder="08xxxxxxxxxx">
+      </div>
+
+      <div class="input-box">
+        <label>Pilih Menu</label>
+        <select>
+          <option>Es Buah</option>
+          <option>Es Teler</option>
+          <option>Es Dogan</option>
+          <option>Es Pop Ice</option>
+          <option>Es Jeruk</option>
+          <option>Es Coklat</option>
+          <option>Thai Tea</option>
+        </select>
+      </div>
+
+      <div class="input-box">
+        <label>Jumlah Pesanan</label>
+        <input type="number" placeholder="Jumlah">
+      </div>
+
+      <div class="input-box">
+        <label>Alamat</label>
+        <textarea placeholder="Masukkan alamat lengkap"></textarea>
+      </div>
+
+      <div class="input-box">
+        <label>Catatan Tambahan</label>
+        <textarea placeholder="Contoh: sedikit gula, extra es, dll"></textarea>
+      </div>
+
+      <button class="btn">
+        Pesan Sekarang
+      </button>
+
+    </form>
+  </div>
+
+</body>
+</html>
